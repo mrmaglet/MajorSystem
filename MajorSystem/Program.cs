@@ -10,6 +10,9 @@ namespace MajorSystem
 	{
 		static void Main(string[] args)
 		{
+
+			Major.GenerateWord();
+
 		}
 	}
 }

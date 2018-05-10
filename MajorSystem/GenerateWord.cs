@@ -8,8 +8,10 @@ namespace MajorSystem
 {
 	public class Major
 	{
-		public void GenerateWord(int nummer)
+		public static void GenerateWord()
 		{
+
+			var consonant1 = "g";
 
 			List<string> vowels = new List<string>();
 
@@ -23,8 +25,33 @@ namespace MajorSystem
 			vowels.Add("ä");
 			vowels.Add("ö");
 
+			foreach (var vowel in vowels)
+			{
+				Console.Write(vowel);
+				Console.WriteLine(consonant1);
+			}
+
+			foreach (var vowel in vowels)
+			{
+				Console.Write(consonant1);
+				Console.WriteLine(vowel);
+			}
+
+			foreach (var vowel in vowels)
+			{
+
+				foreach (var vowel1 in vowels)
+				{
+					Console.Write(vowel);
+					Console.Write(consonant1);
+					Console.WriteLine(vowel1);
+				}
+
+			}
 
 
 		}
+
+
 	}
 }
